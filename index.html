@@ -24,7 +24,18 @@
         width: auto;
       }
     }
+   .bg-color{
+      /* background-color: #c6ac8f; */
+      background-color: black;
+      border-radius: 15px;
+      border-color:  #c6ac8f;
+      color:beige;
+      box-shadow: 0 0 6px #c6ac8f;
+    }
   
+    .txt{
+      color: #ee6c4d;
+    }
   
   </style>
   
@@ -95,62 +106,69 @@
 
     <!-- Projects Section -->
     <section class=" mx-5 my-5" id="third">
-      <h2 class="text-decoration-underline mb-4 mx-5">Projects!</h2>
+      <h2 class="text-decoration-underline mb-5 mx-5">Projects!</h2>
 
       <div style="@media only screen and (max-width: 600px) {
         display: inline;
       
-      }" class="row  row-cols-lg-3 g-2 mt-1 ">
-        <div class="col  ">
-          <div class="card h-80 text-dark">
-            <img src="coffee_sql.png" style="height: 320px;" class="card-img-top  h-20" alt="Coffee SQL Project">
-            <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">Data Exploration Using <u>My SQL</u></h5>
-              <p class="card-text">Performed data cleaning, joins, aggregations, and subqueries. Generated insights to support data-driven decision-making for a retail coffee business.</p>
-              <a href="https://github.com/simranchoudhary1337/Coffee_sales_SQL_analysis" class="btn btn-dark">Go To Project</a>
-            </div>
+      }"
+       class="row  row-cols-lg-3 g-4 mt-1 ">
+    
+
+
+       <div style="@media only screen and (max-width: 600px) {
+        display: inline;
+      
+      }
+      "class="">
+
+
+      <div class="col">
+        <div class="card h-80  bg-color  ">
+          <img src="Screenshot 2025-08-30 104710.png" style="height: 200px;" class="card-img-top" alt="Vendor performance Analysis">
+          <div class="card-body ">
+            <h5 class="card-title fs-4 fw-bold txt">Vendor Performance Analysis Using <u>Power BI, Python+MySQL</u></h5>
+            <p class="card-text">Analyzing vendor efficiency and profitability to support strategic purchasing and inventory decisions using SQL, Python and PowerBi.</p>
+            <a href="https://github.com/simranchoudhary1337/Vendor-performance-analysis-SQL-Python-Powerbi" class="btn btn-dark">Go To Project</a>
           </div>
         </div>
+      </div>
+      </div>
+
+
+
+
+
 
         <div style="@media only screen and (max-width: 600px) {
           display: inline;
         
-        }"class="">
+        }
+        "class="">
+
+
         <div class="col">
-          <div class="card h-80 text-dark">
-            <img src="bank loan.png" style="height: 320px;" class="card-img-top" alt="Bank Loan Analysis">
+          <div class="card h-80  bg-color  ">
+            <img src="bank loan.png" style="height: 200px;" class="card-img-top" alt="Bank Loan Analysis">
             <div class="card-body ">
-              <h5 class="card-title fs-3 fw-bold">Finance (Bank Loans) Analysis Using <u>Power BI and MySQL</u></h5>
+              <h5 class="card-title fs-4 fw-bold txt">Finance (Bank Loans) Analysis Using <u>Power BI and MySQL</u></h5>
               <p class="card-text">This project focuses on analyzing bank loan data using MySQL for data storage and transformation, and Power BI for visualization to uncover insights.</p>
               <a href="https://github.com/simranchoudhary1337/Finance-bank-loan-Analysis" class="btn btn-dark">Go To Project</a>
             </div>
           </div>
         </div>
         </div>
+    
 
-     <div style="@media only screen and (max-width: 600px) {
+
+        <div style="@media only screen and (max-width: 600px) {
           display: inline;
         }"class=" ">
         <div class="col">
-          <div class="card h-80 text-dark">
-            <img src="Screenshot 2025-07-22 125432.png" style="height:320px" class="card-img-top " alt="HR Analysis">
+          <div class="card h-80 bg-color ">
+            <img src="Screenshot 2025-07-22 123606.png" style="height:200px" class="card-img-top " alt="HR Analysis">
             <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">Google Search Analysis using <u>Python</u></h5>
-              <p class="card-text">This project analyzes global search trends using Python and Google Trends data.By visualizing regional interest discovered the countries that lead in search activity.</p>
-              <a href="https://github.com/simranchoudhary1337/Google-Search-Analysis-Project" class="btn btn-dark">Go To Project</a>
-            </div>
-          </div>
-        </div>
-        </div>
-
-<div style="@media only screen and (max-width: 600px) {
-          display: inline;
-        }"class=" ">
-        <div class="col">
-          <div class="card h-80 text-dark">
-            <img src="Screenshot 2025-07-22 123606.png" style="height:250px" class="card-img-top " alt="HR Analysis">
-            <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">Ecommerce-Data-Analysis using <u>Python+MySQL</u></h5>
+              <h5 class="card-title fs-4 fw-bold txt">Ecommerce-Data-Analysis using <u>Python+MySQL</u></h5>
               <p class="card-text">By integrating SQL and Python for data analysis, this project aims to provide a holistic view of e-commerce operations, facilitating data-driven decisions.</p>
               <a href="https://github.com/simranchoudhary1337/Ecommerce-Data-Analysis" class="btn btn-dark">Go To Project</a>
             </div>
@@ -159,16 +177,45 @@
         </div>
 
 
+        <div style="@media only screen and (max-width: 600px) {
+          display: inline;
+        }"class=" ">
+        <div class="col">
+          <div class="card h-80 bg-color ">
+            <img src="Screenshot 2025-07-22 125432.png" style="height:200px" class="card-img-top " alt="HR Analysis">
+            <div class="card-body">
+              <h5 class="card-title fs-4 fw-bold txt">Keyword Trends using <u>Python</u></h5>
+              <p class="card-text">This project analyzes global search trends using Python and Google Trends data.By visualizing regional interest discovered the countries that lead in search activity.</p>
+              <a href="https://github.com/simranchoudhary1337/Google-Search-Analysis-Project" class="btn btn-dark">Go To Project</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card h-80 bg-color ">
+            <img src="HR analysis.png" style="height:200px" class="card-img-top " alt="HR Analysis">
+            <div class="card-body">
+              <h5 class="card-title fs-4 fw-bold txt">HR Analysis Using <u>Power BI</u></h5>
+              <p class="card-text">Provides insights into HR data to help monitor employee metrics, Employee attrition rates and key drivers, identify trends, and support workforce planning.
+              </p>
+              <a href="https://github.com/simranchoudhary1337/HR-Analysis" class="btn btn-dark">Go To Project</a>
+            </div>
+          </div>
+        </div>
+
         
         <div style="@media only screen and (max-width: 600px) {
           display: inline;
         
         }"class=" ">
         <div class="col ">
-          <div class="card h-80 text-dark">
-            <img src="Screenshot 2025-05-21 184829.png" style="height: 249px;" class="card-img-top img-fluid" alt="Amazon Sales Analysis">
+          <div class="card h-100 bg-color ">
+            <img src="Screenshot 2025-05-21 184829.png" style="height: 200px;" class="card-img-top img-fluid" alt="Amazon Sales Analysis">
             <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">Amazon Sales Analysis Using <u>Excel</u></h5>
+              <h5 class="card-title fs-4 fw-bold txt">Amazon Sales Analysis Using <u>Excel</u></h5>
               <p class="card-text">Analysis aims to evaluate the performance of products sold on Amazon using Microsoft Excel as the primary analytical tool.</p>
               <a href="https://github.com/simranchoudhary1337/Amazon_sales_analysis" class="btn btn-dark">Go To Project</a>
             </div>
@@ -180,14 +227,16 @@
         <div style="@media only screen and (max-width: 600px) {
           display: inline;
         }"class=" ">
-        <div class="col">
-          <div class="card h-80 text-dark">
-            <img src="HR analysis.png" style="height:252px" class="card-img-top " alt="HR Analysis">
+      
+
+
+        <div class="col  ">
+          <div class="card h-80 bg-color ">
+           <img src="coffee_sql.png" style="height: 200px;" class="card-img-top  h-20" alt="Coffee SQL Project">
             <div class="card-body">
-              <h5 class="card-title fs-3 fw-bold">HR Analysis Using <u>Power BI</u></h5
-              <p class="card-text">Provides insights into human resources data using Power BI to help monitor employee metrics, Employee attrition rates and key drivers, identify trends, Gender, age, and 
-                experience-based analysis.</p>
-              <a href="https://github.com/simranchoudhary1337/HR-Analysis" class="btn btn-dark">Go To Project</a>
+              <h5 class="card-title fs-4 fw-bold txt">Data Exploration Using <u>My SQL</u></h5>
+              <p class="card-text">Performed data cleaning, joins, aggregations, and subqueries. Generated insights to support data-driven decision-making for a retail coffee business.</p>
+              <a href="https://github.com/simranchoudhary1337/Coffee_sales_SQL_analysis" class="btn btn-dark">Go To Project</a>
             </div>
           </div>
         </div>
@@ -196,6 +245,9 @@
        
       </div>
     </section> 
+
+
+
 
 
 
@@ -225,3 +277,4 @@
 </body>
 
 </html>
+
