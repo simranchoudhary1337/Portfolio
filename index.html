@@ -24,7 +24,8 @@
         width: auto;
       }
     }
-   .bg-color{
+    
+    .bg-color{
       /* background-color: #c6ac8f; */
       background-color: black;
       border-radius: 15px;
@@ -36,17 +37,59 @@
     .txt{
       color: #ee6c4d;
     }
-  
+
+
+
+    .menubar {
+      background-color: black; /* different shade */
+    }
+    .menubar .nav-link {
+      color: rgb(247, 247, 192);
+    }
+    .menubar .nav-link:hover {
+      text-decoration: underline;
+    }
+
   </style>
   
 </head>
 
 
 <body class="bg-black text-white" style="font-family: Poppins, sans-serif;">
-  <header class="  w-100 ">
-    <nav class=" py-1"  style="
-    background-color: #14213d;">
-      <div class=" text-center h-50 fs-2">Welcome To My Portfolio</div>
+  <header class="w-100 ">
+    <nav id="home" class=" py-1"  style="background-color: #14213d;">
+      <div class=" text-center h-30 fs-2 ">Welcome To My Portfolio</div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark  menubar " style="top: 15px;">
+        <div class="container-fluid">
+          <!-- Toggle button for small screens -->
+          <!-- <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          
+          <button class="navbar-toggler position-absolute end-0 me-3" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+          <!-- Navbar items -->
+          <!-- <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav"> -->
+
+              <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-evenly fs-4 w-100">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#third">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     </nav>
   </header>
 
@@ -58,7 +101,7 @@
           <h2>Hi, My name is <span class="text-info">Simran Choudhary</span></h2>
           <div class="fs-2">and I am a</div>
           <span class="fs-2 text-info" id="element"></span>
-          <p>I believe that data tells a story, and I am dedicated to uncovering those narratives to help organizations make informed decisions. In this portfolio, you will find a selection of my work that highlights my analytical skills, creativity, and commitment to delivering high-quality results.</p>
+          <p >I believe that data tells a story, and I am dedicated to uncovering those narratives to help organizations make informed decisions. In this portfolio, you will find a selection of my work that highlights my analytical skills, creativity, and commitment to delivering high-quality results.</p>
         </div>
         <div class="col-md-6 mb-4 text-center my-0">
           <img src="IMG-20230323-WA0003-removebg-preview.png" class="img-fluid custom-img" alt="Simran">
@@ -70,10 +113,10 @@
 
     <!-- Skills Section -->
     <section class="my-5 mx-5 " id="skill">
-      <h2 class="text-decoration-underline mb-4">Skills!</h2>
+      <h2 class="text-decoration-underline mb-5">Skills!</h2>
 
       <div class="mx-5">
-         <div class="col-md-4">
+        <div class="col-md-4">
           <h5 class="text-primary">Data Analysis and Reporting</h5>
           <ul class="text-light">
             <li>Pandas</li>
@@ -83,7 +126,7 @@
             <li>Statistical Analysis</li>
           </ul>
         </div>
-
+        
         <div class="col-md-4">
           <h5 class="text-primary">Database Management</h5>
           <ul class="text-light">
@@ -92,20 +135,21 @@
           </ul>
         </div>
 
-         <div class="">
+       <div class="">
           <h5 class="text-primary ">Data Analysis & Visualization Tools</h5>
           <ul class="text-light">
             <li>Excel</li>
             <li>Power BI</li>
           </ul>
         </div>
+        
       </div>
     </section>
 
     <hr class="bg-light">
 
     <!-- Projects Section -->
-    <section class=" mx-5 my-5" id="third">
+     <section class=" mx-5 my-5" id="third">
       <h2 class="text-decoration-underline mb-5 mx-5">Projects!</h2>
 
       <div style="@media only screen and (max-width: 600px) {
@@ -114,6 +158,48 @@
       }"
        class="row  row-cols-lg-3 g-4 mt-1 ">
     
+
+
+       <div style="@media only screen and (max-width: 600px) {
+        display: inline;
+      
+      }
+      "class="">
+
+
+      <div class="col">
+        <div class="card h-80  bg-color  ">
+          <img src="churn.png" style="height: 200px;" class="card-img-top" alt="Vendor performance Analysis">
+          <div class="card-body ">
+            <h5 class="card-title fs-4 fw-bold txt">Banking Customer Churn Prediction <u>Python+Ml Models</u></h5>
+            <p class="card-text">Predict the likelihood of a customer churning, enabling the bank to proactively identify at-risk customers and implement targeted retention strategies..</p>
+            <a href="https://github.com/simranchoudhary1337/Banking-Customer-Churn-Prediction" class="btn btn-dark">Go To Project</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <div style="@media only screen and (max-width: 600px) {
+        display: inline;
+      
+      }
+      "class="">
+
+
+      <div class="col">
+        <div class="card h-80  bg-color  ">
+          <img src="stud.png" style="height: 200px;" class="card-img-top" alt="Vendor performance Analysis">
+          <div class="card-body ">
+            <h5 class="card-title fs-4 fw-bold txt">Student Performance Prediction Using <u>Python+Ml Models</u></h5>
+            <p class="card-text">Predict performance and discovered what drives scores. This helps demonstrate how basic exam data can be used for insights and predictions in education.</p>
+            <a href="https://github.com/simranchoudhary1337/ML-project" class="btn btn-dark">Go To Project</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
 
 
        <div style="@media only screen and (max-width: 600px) {
@@ -185,7 +271,7 @@
             <img src="Screenshot 2025-07-22 125432.png" style="height:200px" class="card-img-top " alt="HR Analysis">
             <div class="card-body">
               <h5 class="card-title fs-4 fw-bold txt">Keyword Trends using <u>Python</u></h5>
-              <p class="card-text">This project analyzes global search trends using Python and Google Trends data.By visualizing regional interest discovered the countries that lead in search activity.</p>
+              <p class="card-text">This project analyzes global search trends using Python and Google Trends data. By visualizing regional interest discovered across the countries that lead in search activity.</p>
               <a href="https://github.com/simranchoudhary1337/Google-Search-Analysis-Project" class="btn btn-dark">Go To Project</a>
             </div>
           </div>
@@ -250,9 +336,6 @@
 
 
 
-
-
-
     <!-- Contact Section -->
     <section class="mx-5 my-5" id="contact">
       <h2 class="text-decoration-underline">Contact Me!</h2>
@@ -277,5 +360,3 @@
 </body>
 
 </html>
-
-
